@@ -89,6 +89,18 @@ public class Collection_example {
 		private int level;
 		private boolean isPro;
 		
+		public boolean proPlayer() {
+			boolean b = false;
+			if (level>=48) {
+				isPro=true;
+				b = true;
+			}else {
+				isPro=false;
+				b = false;
+			}
+			return b;
+		}
+		
 		
 		
 		public void setPlayer(String nickname , String region , int level , boolean isPro) {
